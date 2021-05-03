@@ -19,7 +19,7 @@ int main(){
     // for(int j=0; j<adj.size(); j++){
     //     cout << adj.at(j);
     // }
-
+    cout << adj[0];
     // cout<<2;
 
     return 0;
