@@ -37,3 +37,16 @@ for _ in range(1,n+1):
         dfs(_,vis,adj,ans)
 
 print(ans)
+
+
+
+# input for node and edges number 
+# 7 6
+
+# input for the edges of the graph
+# 1 2
+# 2 4
+# 2 7
+# 7 6
+# 4 6
+# 3 5
