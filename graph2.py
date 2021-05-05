@@ -69,3 +69,14 @@ print(ans)
 # 3 5
 # 5 7
 # 4 6
+
+
+# steps followed
+
+
+# 1. create a adjacency list!
+# 2. then create a visited array
+# 3. take 2 list que and ans
+# 4. iterate all of the vertices from 1 to n
+# 5. check if the vertex is visited or not. If not visited then continue
+# 6. then follow the above algorithm!
