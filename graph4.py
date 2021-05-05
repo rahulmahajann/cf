@@ -29,3 +29,13 @@ print(adj)
 # 10 9 
 # 8 9
 # 8 11
+
+
+vis=[]
+
+for _ in range(n+1):
+    vis.append(0)
+
+for _ in range(1,n+1):
+    if(vis[_]==0):
+        
