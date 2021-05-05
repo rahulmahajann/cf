@@ -16,4 +16,24 @@ print('adjacency list: -->')
 
 for _ in range(1,n+1):
     print(_,adj[_])
-    
+
+vis=[]
+for _ in range(n+1):
+    vis.append(0)
+
+print(vis)
+
+ans=[]
+
+def dfs(node,vis,adj,que):
+    ans.append(node)
+    vis[node]=1
+    for _ in adj[node]:
+        if(vis[_]==0):
+            dfs(_,vis,adj,que)
+
+for _ in range(1,n+1):
+    if(vis[_]==0):
+        dfs(_,vis,adj,ans)
+
+print(ans)
