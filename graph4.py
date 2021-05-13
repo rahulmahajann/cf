@@ -36,6 +36,10 @@ vis=[]
 for _ in range(n+1):
     vis.append(0)
 
+def cycleinbfs():
+    print(1)
+
 for _ in range(1,n+1):
     if(vis[_]==0):
-        
+        if(cycleinbfs(_)):
+            print(1)
