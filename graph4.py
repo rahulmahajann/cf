@@ -1,4 +1,4 @@
-
+# is there any cycle in the graph or not? using bfs
 
 # input for number of nodes and edges of the graph
 # 11 10
@@ -57,4 +57,5 @@ def cycleinbfs(_):
 for i in range(1,n+1):
     if(vis[i]==0):
         if(cycleinbfs(i)):
-            print(i,1)
+            print('yes there is a cycle!')
+            break
