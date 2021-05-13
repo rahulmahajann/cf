@@ -62,7 +62,7 @@ for _ in range(1,n+1):
 
 print(ans)
 
-# 4 6
+# 7 6
 # 1 2
 # 2 3
 # 2 7
