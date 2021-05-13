@@ -36,10 +36,26 @@ vis=[]
 for _ in range(n+1):
     vis.append(0)
 
-def cycleinbfs():
-    print(1)
+que=[[0,1]]
+
+def cycleinbfs(_):
+    que.append([_,-1])
+    vis[_]=1
+    while(len(que)!=0):
+        node = que[0][0]
+        prev = que[0][1]
+        que.pop(0)
+        for _ in (adj[node]):
+            if(vis[_]==1):
+                if(_ == prev or _ == -1):
+                    return False
+                else:
+                    return True
 
 for _ in range(1,n+1):
     if(vis[_]==0):
         if(cycleinbfs(_)):
             print(1)
+        else:
+            print(0)
+
