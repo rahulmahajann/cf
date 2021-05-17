@@ -1,3 +1,31 @@
+# check whether it is a bipartite graph or not (bfs use)
+
+# it isn't a bipartite graph
+
+# 8 8
+# 1 2
+# 2 3
+# 3 4
+# 4 5
+# 5 8
+# 2 8
+# 5 6
+# 6 7
+
+
+# it's a bipartite graph
+
+# 8 8
+# 1 2
+# 2 3
+# 3 4
+# 4 5
+# 5 6
+# 6 7
+# 2 7
+# 5 8
+
+
 n,e=map(int,input().split())
 
 clr=[]
@@ -32,4 +60,13 @@ def bipar(strt,adj,clr):
                 return 0
     return 1
 
+for _ in range(1,n+1):
+    if(clr[_]==0):
+        if(bipar(_,adj,clr)==0):
+            print('no it is not a bipartite graph')
+            break
+        else:
+            print('it is a bipartite graph!')
+            break
 
+        
